@@ -1,5 +1,7 @@
 const mqtt = require('mqtt');
 const express = require('express');
+const date = require('date-and-time');
+
 const app = express();
 
 const client  = mqtt.connect('mqtt://iot.eclipse.org');
@@ -15,9 +17,17 @@ client.on('connect', function () {
   client.subscribe(topic);
 })
 
+
+let before = new Date();
+
 client.on('message', function (topic, message) {
   // message is Buffer
   console.log(message.toString());
+
+  let now = new Date();
+
+  if (date.subtract(now, before).toSeconds() >= 60){
+    before = now;
 
   const client = require('twilio')(
     TWILIO_ACCOUNT_SID,
@@ -27,11 +37,14 @@ client.on('message', function (topic, message) {
   client.messages.create({
     from: TWILIO_PHONE_NUMBER,
     to: CELL_PHONE_NUMBER,
-    body: "A Stranger is at your door!"
+    body: "Someone is at your door!"
    // mediaUrl: 'http://www.themalaysiantimes.com.my/wp-content/uploads/2017/05/06-train-cat-shake-hands.jpg'
   }).then((messsage) => console.log(message.sid));
 
+  } // finish 'if'
+  else console.log("hasn't been 60 seconds");
 });
+
 
 app.get("/"), (req, res) => {
   res.send("Hello world");

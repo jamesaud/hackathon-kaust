@@ -5,9 +5,10 @@
   "main": "mqtt-server.js",
   "dependencies": {
     "@google-cloud/pubsub": "^0.16.2",
+    "date-and-time": "^0.6.2",
+    "express": "^4.16.2",
     "mqtt": "^2.15.1",
-    "twilio": "^3.11.0",
-    "express": "^4.16.2"
+    "twilio": "^3.11.0"
   },
   "devDependencies": {},
   "scripts": {
