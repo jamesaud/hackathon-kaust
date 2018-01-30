@@ -7,7 +7,7 @@ See our Smart Doorbell in action in a video:
 https://photos.app.goo.gl/Kc9ssPQjB1DFm3oz2
 
 Here's a picture of what it looks like:
-![alt text](https://photos.app.goo.gl/nbFeXSY0lj6lasSt2)
+![Alt text](/picture.jpg?raw=true "Doorbell")
 
 
 ## Technology 
