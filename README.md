@@ -1,6 +1,6 @@
 # hackathon-kaust
 
-This was an Internet of Things hackathon!
+This was an Internet of Things 2 day hackathon!
 
 See our Smart Doorbell in action in a video:
 
