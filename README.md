@@ -19,5 +19,8 @@ MQTT messaging protocol was used to communicate with the WIFI enabled ESP32 Micr
 It was a lot of fun developing this, my teammate generally did the hardware aspects of our product :)
 
 
+The 'serverr' folder has JS code which allowed us to send messages via Twilio:
+
+
 
 
