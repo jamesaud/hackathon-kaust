@@ -1,2 +1,0 @@
-# The IoT Course Firmware
-
