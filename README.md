@@ -33,7 +33,6 @@ The Android App was a simple app I wrote to listen to doorbell events and notify
 
 https://github.com/jamesaud/hackathon-kaust/blob/master/androidapp/zepelin/app/src/main/java/com/example/zepelin/MainActivity.java
 
-
-
+Also, I designed and 3d printed the boxes for our equipment in our makerspace lab :)
 
 
