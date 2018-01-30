@@ -27,6 +27,8 @@ Microcontroller.js is what I wrote for our doorbell ringing software:
 
 https://github.com/jamesaud/hackathon-kaust/blob/master/microcontroller.js
 
+The screen software is custom firmware I write in C, but I don't have the code for that right now.
+
 The Android App was a simple app I wrote to listen to doorbell events and notify the person that their doorbell was pushed (it is the first android app I ever wrote, so I was happy to see it work at all :) Give me a break on the coding aspects) :
 
 https://github.com/jamesaud/hackathon-kaust/blob/master/androidapp/zepelin/app/src/main/java/com/example/zepelin/MainActivity.java
